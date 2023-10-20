@@ -1,0 +1,6 @@
+<p>User with id {{user.id}} loaded</p>
+<p>User with {{user.name}}</p>
+
+<a [routerLink]="['/users', 10, 'Anna']">Load Anna</a>
+<br><br>
+<a [routerLink]="['/users', 10, 'Anna']" [queryParams]="{allowEdit: '1'}" fragment="loading">Load Anna2</a>
