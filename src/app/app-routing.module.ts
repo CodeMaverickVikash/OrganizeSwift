@@ -7,16 +7,18 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { UserComponent } from './users/user/user.component';
 import { UsersComponent } from './users/users.component';
 
+const home = "TodoList-Angular";
+
 const routes: Routes = [
-  { path: 'TodoList-Angular', component: TodosComponent },
-  { path: 'about', component:  AboutComponent},
-  { path: 'contact', component:  ContactComponent},
-  { path: 'users', component:  UsersComponent, children: [
+  { path: home, component: TodosComponent },
+  { path: home + '/about', component:  AboutComponent},
+  { path: home + '/contact', component:  ContactComponent},
+  { path: home + '/users', component:  UsersComponent, children: [
           { path: ':id/:name', component:  UserComponent}, // it's a dynamic route
   ]},
   
-  {path: 'page-not-found', component: PageNotFoundComponent},
-  {path: '**', redirectTo: '/page-not-found'}, // Wildcard route - make sure it should be last route
+  {path: home + 'page-not-found', component: PageNotFoundComponent},
+  {path: home + '**', redirectTo: '/page-not-found'}, // Wildcard route - make sure it should be last route
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
