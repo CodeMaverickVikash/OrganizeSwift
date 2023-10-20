@@ -8,7 +8,7 @@ import { UserComponent } from './users/user/user.component';
 import { UsersComponent } from './users/users.component';
 
 const routes: Routes = [
-  { path: '', component: TodosComponent },
+  { path: 'TodoList-Angular', component: TodosComponent },
   { path: 'about', component:  AboutComponent},
   { path: 'contact', component:  ContactComponent},
   { path: 'users', component:  UsersComponent, children: [
