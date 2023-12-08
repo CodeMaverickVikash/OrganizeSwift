@@ -1,6 +1,6 @@
 # TodoList app
 
-Visit the site at [TodoList app](https://vikashrepo123.github.io/TodoList-Angular/).
+Visit the site at [TodoList app](https://vikashrepo123.github.io/OrganizeSwift/).
 
 ## Development server
 

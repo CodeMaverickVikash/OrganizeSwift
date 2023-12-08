@@ -7,7 +7,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { UserComponent } from './users/user/user.component';
 import { UsersComponent } from './users/users.component';
 
-const home = "TodoList-Angular";
+const home = "OrganizeSwift";
 
 const routes: Routes = [
   { path: home, component: TodosComponent },

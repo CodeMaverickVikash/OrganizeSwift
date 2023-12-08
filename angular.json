@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "todo-list": {
+    "OrganizeSwift": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,8 +17,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/todo-list",
-            "deployUrl": "/TodoList-Angular/",
+            "outputPath": "dist/OrganizeSwift",
+            "deployUrl": "/OrganizeSwift/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -28,11 +28,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "src/styles.scss"
             ],
             "scripts": [
-              "./node_modules/bootstrap/dist/js/bootstrap.js",
               "./node_modules/jquery/dist/jquery.js"
             ]
           },
@@ -73,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "todo-list:build:production"
+              "browserTarget": "OrganizeSwift:build:production"
             },
             "development": {
-              "browserTarget": "todo-list:build:development"
+              "browserTarget": "OrganizeSwift:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -84,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "todo-list:build"
+            "browserTarget": "OrganizeSwift:build"
           }
         },
         "test": {
@@ -99,7 +97,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           }
@@ -107,5 +105,10 @@
       }
     }
   },
-  "defaultProject": "todo-list"
+  "schematics": {
+    "@schematics/angular:component": {
+      "style": "scss"
+    }
+  },
+  "defaultProject": "OrganizeSwift"
 }

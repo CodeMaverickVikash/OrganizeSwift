@@ -5,11 +5,11 @@ import { SubjectService } from './subject.service';
 @Component({
   selector: 'app-root', // This is used in html to render it
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 
 export class AppComponent implements OnInit, OnDestroy {
-  title = 'Angular-todo-list'; // variable
+  title = 'OrganizeSwift'; // variable
 
   subActivated = false; // property
 
