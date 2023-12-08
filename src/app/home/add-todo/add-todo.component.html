@@ -1,0 +1,26 @@
+<div class="container d-flex flex-column my-3">
+    <div class="ms-auto my-3">
+        <button type="button" class="btn btn-primary" (click)="collapse.toggle()"
+            [attr.aria-expanded]="!isNotCollapsed" aria-controls="collapseExample">
+            Add Task
+        </button>
+    </div>
+    <div #collapse="ngbCollapse" [(ngbCollapse)]="isNotCollapsed">
+        <div class="card">
+            <div class="card-body">
+                <form (ngSubmit)="addTodo()">
+                    <div class="mb-3">
+                        <label for="title" class="form-label">Title</label>
+                        <input type="text" [(ngModel)]="title" class="form-control" name="title" id="title"
+                            aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="desc" class="form-label">Description</label>
+                        <input type="text" class="form-control" name="desc" id="desc" [(ngModel)]="desc">
+                    </div>
+                    <button type="submit" class="btn btn-secondary">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,6 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { SubjectService } from './subject.service';
 
 @Component({
   selector: 'app-root', // This is used in html to render it
@@ -9,11 +8,9 @@ import { SubjectService } from './subject.service';
 })
 
 export class AppComponent implements OnInit, OnDestroy {
-  title = 'OrganizeSwift'; // variable
+  title = 'OrganizeSwift';
 
-  subActivated = false; // property
-
-  constructor(private subService: SubjectService) {
+  constructor() {
     setTimeout(() => {
       this.title = "changed title";
     }, 2000);
@@ -21,9 +18,6 @@ export class AppComponent implements OnInit, OnDestroy {
 
   private activatedSub!: Subscription;
   ngOnInit(): void {
-    this.activatedSub = this.subService.activatedEmitter.subscribe(didActivated => { // same for both eventEmitter and subject
-      this.subActivated = didActivated;
-    })
   }
 
   ngOnDestroy(): void {

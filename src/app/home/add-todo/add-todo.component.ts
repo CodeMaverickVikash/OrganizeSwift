@@ -1,4 +1,10 @@
-import { Component, EventEmitter, OnDestroy, OnInit, Output } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  OnDestroy,
+  OnInit,
+  Output,
+} from '@angular/core';
 import { Router } from '@angular/router';
 import { Todo } from 'src/app/Todo';
 import { interval, Observable, Subscription } from 'rxjs';
@@ -7,9 +13,10 @@ import { map, filter } from 'rxjs/operators';
 @Component({
   selector: 'app-add-todo',
   templateUrl: './add-todo.component.html',
-  styleUrls: ['./add-todo.component.scss']
+  styleUrls: ['./add-todo.component.scss'],
 })
 export class AddTodoComponent implements OnInit, OnDestroy {
+  isNotCollapsed: boolean = true;
 
   constructor(private router: Router) {}
 
@@ -24,16 +31,11 @@ export class AddTodoComponent implements OnInit, OnDestroy {
       sno: 8,
       title: this.title,
       desc: this.desc,
-      active: true
-    }
+      active: true,
+    };
     this.todoAdd.emit(todo);
     this.title = '';
     this.desc = '';
-  }
-
-  loadContact() {
-    // conplex calculation
-    this.router.navigate(['/contact'], {queryParams: {allowEdit: '1'}, fragment: 'loading'}); // redirect
   }
 
   private firstObSubscription!: Subscription;
@@ -47,18 +49,18 @@ export class AddTodoComponent implements OnInit, OnDestroy {
     // Custom interval observable
     const customIntervalObservable = Observable.create((observer: any) => {
       let count = 0;
-      setInterval(()=> {
+      setInterval(() => {
         observer.next(count); // pass
-        if(count === 2) {
+        if (count === 2) {
           observer.complete();
         }
-        if(count > 3) {
+        if (count > 3) {
           observer.error(new Error('Count is greater than 3'));
         }
         count++;
-      },1000);
+      }, 1000);
     });
-    
+
     // this.firstObSubscription = customIntervalObservable.subscribe((data: any) => {
     //   console.log(data);
     // }, (error: any) => {
@@ -69,22 +71,30 @@ export class AddTodoComponent implements OnInit, OnDestroy {
     // });
 
     // Operator - you might want a raw data sometime, you want transformed or filterout data then need to use operator.
-    this.firstObSubscription = customIntervalObservable.pipe(filter((data: any) => {
-      return data > 0;
-    }),map((data: any) => {
-      return 'Round: ' + (data+1);
-    })).subscribe((data: any) => {
-      console.log(data);
-    }, (error: any) => {
-      console.log(error);
-      alert(error.message);
-    }, () => {
-      console.log('Completed!');
-    });
+    this.firstObSubscription = customIntervalObservable
+      .pipe(
+        filter((data: any) => {
+          return data > 0;
+        }),
+        map((data: any) => {
+          return 'Round: ' + (data + 1);
+        })
+      )
+      .subscribe(
+        (data: any) => {
+          console.log(data);
+        },
+        (error: any) => {
+          console.log(error);
+          alert(error.message);
+        },
+        () => {
+          console.log('Completed!');
+        }
+      );
   }
 
   ngOnDestroy(): void {
     this.firstObSubscription.unsubscribe();
   }
-
 }
