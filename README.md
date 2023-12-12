@@ -1,19 +1,11 @@
 # OrganizeSwift
-
 It's a Task Manager web application! This project is designed to help you efficiently manage your tasks with ease. Below are the key features of our task management system:
-
-#### Add task
-Easily add new tasks with important details. Keep track of your to-do list and never miss a deadline.
-#### Edit task
-Update task details on-the-fly. Modify due dates, descriptions, or any other information to stay organized.
-#### Delete task
-Remove completed or unnecessary tasks effortlessly. Streamline your task list and focus on what matters most.
-#### Organize task
-Categorize tasks, set priorities, and organize them into different lists or projects. Stay in control of your workflow.
-
+- **Add task**: Easily add new tasks with important details. Keep track of your to-do list and never miss a deadline.
+- **Edit task**: Update task details on-the-fly. Modify due dates, descriptions, or any other information to stay organized.
+- **Delete task**: Remove completed or unnecessary tasks effortlessly. Streamline your task list and focus on what matters most.
+- **Organize task**: Organize tasks into different lists. Stay in control of your workflow.
 
 # What's need to improve in future
-
 #### Priority
 Assign priority levels to tasks, helping you prioritize and focus on high-importance items first.
 #### Deadline
