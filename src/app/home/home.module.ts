@@ -6,6 +6,7 @@ import { AddTodoComponent } from './add-todo/add-todo.component';
 import { TodosComponent } from './todos/todos.component';
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
+import {DragDropModule} from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     NgbModule,
     FormsModule,
+    DragDropModule,
     HomeRoutingModule
   ]
 })

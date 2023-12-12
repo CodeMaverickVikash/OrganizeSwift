@@ -1,7 +1,7 @@
-<div class="container d-flex flex-column my-3">
+<div class="container d-flex flex-column my-3 col-md-8">
     <div class="ms-auto my-3">
-        <button type="button" class="btn btn-primary" (click)="collapse.toggle()"
-            [attr.aria-expanded]="!isNotCollapsed" aria-controls="collapseExample">
+        <button type="button" class="btn btn-primary" (click)="collapse.toggle()" [attr.aria-expanded]="!isNotCollapsed"
+            aria-controls="collapseExample">
             Add Task
         </button>
     </div>
@@ -16,7 +16,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="desc" class="form-label">Description</label>
-                        <input type="text" class="form-control" name="desc" id="desc" [(ngModel)]="desc">
+                        <textarea class="form-control" name="desc" id="desc" [(ngModel)]="desc"></textarea>
                     </div>
                     <button type="submit" class="btn btn-secondary">Save</button>
                 </form>

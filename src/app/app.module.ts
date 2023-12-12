@@ -9,6 +9,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { PageNotFoundComponent } from './common/page-not-found/page-not-found.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {DragDropModule} from '@angular/cdk/drag-drop';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FooterComponent,
     PageNotFoundComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, NgbModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, NgbModule, DragDropModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

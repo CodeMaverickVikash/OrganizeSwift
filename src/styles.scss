@@ -1,7 +1,15 @@
 $primary: #845ec2;
-$secondary: #C3ACD0;
+$secondary: #c3acd0;
 $danger: #ff6969;
 $light: #f8f6f4;
 $dark: #4b4453;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}

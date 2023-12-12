@@ -1,26 +1,49 @@
-<div class="container my-4 col-md-7">
+<div class="container my-4 col-md-8">
     <h2 class="my-2">All tasks</h2>
     <div *ngIf="this.todos.length === 0; else elseBlock" class="text-center text-danger">
         <h4>No todos to display.</h4>
     </div>
     <ng-template #elseBlock>
-        <div class="tasklist-wrapper">
-            <ngb-accordion [closeOthers]="true" #acc="ngbAccordion">
-                <ng-container *ngFor="let todo of todos; index as i">
-                    <ngb-panel [title]="todo.title">
-                        <ng-template ngbPanelContent>
-                            <div class="d-flex flex-column">
-                                <p>{{todo.desc}}</p>
-                                <div class="action-btns ms-auto my-2">
-                                    <button class="btn btn-sm btn-secondary">Edit</button>
-                                    <button class="btn btn-sm btn-danger mx-2"
-                                        (click)="deleteTodo(todo)">Delete</button>
-                                </div>
-                            </div>
-                        </ng-template>
-                    </ngb-panel>
-                </ng-container>
-            </ngb-accordion>
+        <div class="task-list-wrap">
+            <div class="accordion" cdkDropList (cdkDropListDropped)="drop($event)">
+                <div class="accordion-item" *ngFor="let todo of todos; index as i" cdkDrag cdkDragLockAxis="y">
+                    <div class="accordion-header d-flex" (click)="toggleItem(todo)" cdkDragHandle>
+                        <span class="ellipsis-container" [title]="todo.title">{{todo.title}}</span>
+                        <div class="action-btns ms-auto">
+                            <button class="btn btn-sm btn-primary">Show</button>
+                            <button class="btn btn-sm btn-secondary mx-2"
+                                (click)="openEditModal(i, editModal); $event.stopPropagation();">Edit</button>
+                            <button class="btn btn-sm btn-danger" (click)="deleteTodo(todo)">Delete</button>
+                        </div>
+                    </div>
+                    <div class="accordion-content" [ngClass]="{'hide': !todo.hide}">
+                        <p>{{todo.desc}}</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </ng-template>
 </div>
+
+<ng-template #editModal let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">Update</h4>
+        <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+        <form>
+            <div class="mb-3">
+                <label for="title" class="form-label">Title</label>
+                <input type="text" [(ngModel)]="editData.title" class="form-control" name="title" id="title"
+                    aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="desc" class="form-label">Description</label>
+                <textarea class="form-control" name="desc" id="desc" [(ngModel)]="editData.desc"></textarea>
+            </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="updateTodo(); modal.close()">Update data</button>
+    </div>
+</ng-template>
