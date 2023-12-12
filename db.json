@@ -1,24 +1,49 @@
 {
   "todos": [
     {
-      "id": 2,
-      "title": "Vikash Hello1",
-      "desc": "qqqqqqq"
+      "id": 1702363833133,
+      "title": "Our JavaScript Tutorial is designed for beginners and professionals both. JavaScript is used to create client-side dynamic pages.",
+      "desc": "JavaScript (js) is a light-weight object-oriented programming language which is used by several websites for scripting the webpages. It is an interpreted, full-fledged programming language that enables dynamic interactivity on websites when applied to an HTML document. It was introduced in the year 1995 for adding programs to the webpages in the Netscape Navigator browser. Since then, it has been adopted by all other graphical web browsers. With JavaScript, users can build modern web applications to interact directly without reloading the page every time. The traditional website uses js to provide several forms of interactivity and simplicity."
     },
     {
-      "id": 3,
-      "title": "vikash2",
-      "desc": "123"
+      "id": 1702364291879,
+      "title": "Python Tutorial | Python Programming Language",
+      "desc": "Python is a general-purpose, dynamic, high-level, and interpreted programming language. It supports Object Oriented programming approach to develop applications. It is simple and easy to learn and provides lots of high-level data structures.\n\nPython is an easy-to-learn yet powerful and versatile scripting language, which makes it attractive for Application Development.\n\nWith its interpreted nature, Python's syntax and dynamic typing make it an ideal language for scripting and rapid application development.\n\nPython supports multiple programming patterns, including object-oriented, imperative, and functional or procedural programming styles."
     },
     {
-      "id": 4,
-      "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem reprehenderit expedita delectus maxime aperiam obcaecati perspiciatis nobis et tempora fugiat! Corrupti deleniti consequatur nam architecto, exercitationem alias officia mollitia facere.",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem reprehenderit expedita delectus maxime aperiam obcaecati perspiciatis nobis et tempora fugiat! Corrupti deleniti consequatur nam architecto, exercitationem alias officia mollitia facere."
+      "id": 1702364351592,
+      "title": "Java Tutorial | Java Training Our core Java programming tutorial is ",
+      "desc": "Java is a programming language and a platform. Java is a high level, robust, object-oriented and secure programming language.\n\nJava was developed by Sun Microsystems (which is now the subsidiary of Oracle) in the year 1995. James Gosling is known as the father of Java. Before Java, its name was Oak. Since Oak was already a registered company, so James Gosling and his team changed the name from Oak to Java.\n\nPlatform: Any hardware or software environment in which a program runs, is known as a platform. Since Java has a runtime environment (JRE) and API, it is called a platform."
     },
     {
-      "id": 1702316463032,
-      "title": "12",
-      "desc": "12"
+      "id": 17023638331331,
+      "title": "Our JavaScript Tutorial is designed for beginners and professionals both. JavaScript is used to create client-side dynamic pages.",
+      "desc": "JavaScript (js) is a light-weight object-oriented programming language which is used by several websites for scripting the webpages. It is an interpreted, full-fledged programming language that enables dynamic interactivity on websites when applied to an HTML document. It was introduced in the year 1995 for adding programs to the webpages in the Netscape Navigator browser. Since then, it has been adopted by all other graphical web browsers. With JavaScript, users can build modern web applications to interact directly without reloading the page every time. The traditional website uses js to provide several forms of interactivity and simplicity."
+    },
+    {
+      "id": 17023642918794,
+      "title": "Python Tutorial | Python Programming Language",
+      "desc": "Python is a general-purpose, dynamic, high-level, and interpreted programming language. It supports Object Oriented programming approach to develop applications. It is simple and easy to learn and provides lots of high-level data structures.\n\nPython is an easy-to-learn yet powerful and versatile scripting language, which makes it attractive for Application Development.\n\nWith its interpreted nature, Python's syntax and dynamic typing make it an ideal language for scripting and rapid application development.\n\nPython supports multiple programming patterns, including object-oriented, imperative, and functional or procedural programming styles."
+    },
+    {
+      "id": 17023643515925,
+      "title": "Java Tutorial | Java Training Our core Java programming tutorial is ",
+      "desc": "Java is a programming language and a platform. Java is a high level, robust, object-oriented and secure programming language.\n\nJava was developed by Sun Microsystems (which is now the subsidiary of Oracle) in the year 1995. James Gosling is known as the father of Java. Before Java, its name was Oak. Since Oak was already a registered company, so James Gosling and his team changed the name from Oak to Java.\n\nPlatform: Any hardware or software environment in which a program runs, is known as a platform. Since Java has a runtime environment (JRE) and API, it is called a platform."
+    },
+    {
+      "id": 170236383313312,
+      "title": "Our JavaScript Tutorial is designed for beginners and professionals both. JavaScript is used to create client-side dynamic pages.",
+      "desc": "JavaScript (js) is a light-weight object-oriented programming language which is used by several websites for scripting the webpages. It is an interpreted, full-fledged programming language that enables dynamic interactivity on websites when applied to an HTML document. It was introduced in the year 1995 for adding programs to the webpages in the Netscape Navigator browser. Since then, it has been adopted by all other graphical web browsers. With JavaScript, users can build modern web applications to interact directly without reloading the page every time. The traditional website uses js to provide several forms of interactivity and simplicity."
+    },
+    {
+      "id": 170236429187913,
+      "title": "Python Tutorial | Python Programming Language",
+      "desc": "Python is a general-purpose, dynamic, high-level, and interpreted programming language. It supports Object Oriented programming approach to develop applications. It is simple and easy to learn and provides lots of high-level data structures.\n\nPython is an easy-to-learn yet powerful and versatile scripting language, which makes it attractive for Application Development.\n\nWith its interpreted nature, Python's syntax and dynamic typing make it an ideal language for scripting and rapid application development.\n\nPython supports multiple programming patterns, including object-oriented, imperative, and functional or procedural programming styles."
+    },
+    {
+      "id": 170236435159232,
+      "title": "Java Tutorial | Java Training Our core Java programming tutorial is ",
+      "desc": "Java is a programming language and a platform. Java is a high level, robust, object-oriented and secure programming language.\n\nJava was developed by Sun Microsystems (which is now the subsidiary of Oracle) in the year 1995. James Gosling is known as the father of Java. Before Java, its name was Oak. Since Oak was already a registered company, so James Gosling and his team changed the name from Oak to Java.\n\nPlatform: Any hardware or software environment in which a program runs, is known as a platform. Since Java has a runtime environment (JRE) and API, it is called a platform."
     }
   ]
 }

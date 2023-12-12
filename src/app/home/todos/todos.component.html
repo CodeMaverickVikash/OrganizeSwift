@@ -8,7 +8,7 @@
             <div class="accordion" cdkDropList (cdkDropListDropped)="drop($event)">
                 <div class="accordion-item" *ngFor="let todo of todos; index as i" cdkDrag cdkDragLockAxis="y">
                     <div class="accordion-header d-flex" (click)="toggleItem(todo)" cdkDragHandle>
-                        <span class="ellipsis-container" [title]="todo.title">{{todo.title}}</span>
+                        <span class="ellipsis-container text-primary" [title]="todo.title">{{todo.title}}</span>
                         <div class="action-btns ms-auto">
                             <button class="btn btn-sm btn-primary">Show</button>
                             <button class="btn btn-sm btn-secondary mx-2"
@@ -39,7 +39,7 @@
             </div>
             <div class="mb-3">
                 <label for="desc" class="form-label">Description</label>
-                <textarea class="form-control" name="desc" id="desc" [(ngModel)]="editData.desc"></textarea>
+                <textarea class="form-control" rows="10" name="desc" id="desc" [(ngModel)]="editData.desc"></textarea>
             </div>
         </form>
     </div>
