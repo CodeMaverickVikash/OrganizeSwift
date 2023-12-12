@@ -1,6 +1,23 @@
-# TodoList app
+# OrganizeSwift
 
-Visit the site at [TodoList app](https://vikashrepo123.github.io/OrganizeSwift/).
+It's a Task Manager web application! This project is designed to help you efficiently manage your tasks with ease. Below are the key features of our task management system:
+
+#### Add task
+Easily add new tasks with important details. Keep track of your to-do list and never miss a deadline.
+#### Edit task
+Update task details on-the-fly. Modify due dates, descriptions, or any other information to stay organized.
+#### Delete task
+Remove completed or unnecessary tasks effortlessly. Streamline your task list and focus on what matters most.
+#### Organize task
+Categorize tasks, set priorities, and organize them into different lists or projects. Stay in control of your workflow.
+
+
+# What's need to improve in future
+
+#### Priority
+Assign priority levels to tasks, helping you prioritize and focus on high-importance items first.
+#### Deadline
+Set deadlines for your tasks to stay on schedule. Receive timely reminders to ensure you meet important dates.
 
 ## Screenshot
 ![image](https://github.com/CodeMaverickVikash/OrganizeSwift/assets/90571844/985643b0-d474-4f46-9090-32a138d6e6e3)
