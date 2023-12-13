@@ -5,6 +5,15 @@ It's a Task Manager web application! This project is designed to help you effici
 - **Delete task**: Remove completed or unnecessary tasks effortlessly. Streamline your task list and focus on what matters most.
 - **Organize task**: Organize tasks into different lists. Stay in control of your workflow.
 
+#### Quick start:
+```
+git clone https://github.com/CodeMaverickVikash/OrganizeSwift.git
+cd OrganizeSwift
+npm install
+npm run startserver
+npm run start
+```
+
 # What's need to improve in future
 #### Priority
 Assign priority levels to tasks, helping you prioritize and focus on high-importance items first.
