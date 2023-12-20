@@ -14,7 +14,7 @@ npm run startserver
 npm run start
 ```
 
-# What's need to improve in future
+# What needs to improve in the future
 #### Priority
 Assign priority levels to tasks, helping you prioritize and focus on high-importance items first.
 #### Deadline
